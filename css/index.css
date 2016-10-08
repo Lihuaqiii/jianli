@@ -1327,8 +1327,8 @@ display: block;
     -webkit-animation: bounceInLeft 1s 0s both;
 }
 #page6 img:nth-child(4) {
-    animation: rotateInDownRight 1s 0s both;
-    -webkit-animation: rotateInDownRight 1s 0s both;
+    animation: move1 1s  linear both;
+    -webkit-animation: move1 1s  linear both;
 }
 #page6 img:nth-child(6) {
     animation: bounceInLeft 1s 0s both;
@@ -1377,6 +1377,27 @@ display: block;
     }
     100% {
         -webkit-transform: rotate(360deg);
+    }
+}
+
+
+
+
+@keyframes move1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(1080deg);
+    }
+}
+
+@-webkit-keyframes move1 {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(1080deg);
     }
 }
 
